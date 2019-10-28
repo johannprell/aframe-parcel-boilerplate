@@ -1,6 +1,7 @@
 # aframe-parcel-boilerplate
 
-Boilerplate for web-VR with [A-Frame](https://aframe.io/) and [Parcel](https://parceljs.org).
+Boilerplate for Web-VR with [A-Frame](https://aframe.io/) and [Parcel](https://parceljs.org).
+Added some common A-Frame modules and folder for static assets.
 
 ## How to use
 
@@ -13,8 +14,6 @@ to install dependencies and
 yarn dev
 ```
 to start localhost.
-
-## About
 
 ## Credits
 
