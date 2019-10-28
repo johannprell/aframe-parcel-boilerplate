@@ -1,0 +1,16 @@
+{
+  "name": "aframe-parcel-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:johannprell/aframe-parcel-boilerplate.git",
+  "author": "Johann Prell",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html"
+  },
+  "dependencies": {
+    "parcel": "^1.12.4"
+  }
+}
