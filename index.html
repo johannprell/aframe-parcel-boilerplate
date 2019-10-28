@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>A-Frame Parcel Boilerplate</title>
     <style>
       body {
         position: fixed;
@@ -14,8 +14,37 @@
         height: 100%;
       }
     </style>
+    <script src="./src/index.js"></script>
   </head>
   <body>
-    <script src="./src/index.js"></script>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="unicorn" src="./assets/Unicorn_01.gltf">
+      </a-assets>
+      
+      <!-- empty entity with hello-world component - see src/components.js -->
+      <a-entity hello-world></a-entity>
+
+      <!-- 
+        Primitive objects 
+        Sphere: uses color-jump component with default colors and interval
+        Box: uses rotator component with default speed
+        Torus Knot: uses rotator component with custom speed
+      -->
+      <a-sphere color="red" position="0 2 -5" scale="1 1 1" color-jump></a-sphere>
+      <a-box color="yellow" position="-2 2 -3" scale="1 1 1" rotation="0 45 45" rotator></a-box>
+      <a-torus-knot color="blue" position="2 2 -3" scale="0.5 0.5 0.5" rotator="speed:0.005"></a-torus-knot>
+
+      <!-- Load unicorn defined in assets -->
+      <a-gltf-model src="#unicorn" scale="1, 1, 1" position="0 0 -20" rotation="0 45 0"></a-gltf-model>
+
+      <!-- Environment -->
+      <a-entity environment="preset: starry; dressingAmount: 10"></a-entity>
+      <a-light color="lightcyan" position="0 0 40"></a-light>
+
+      <!-- Hands -->
+      <!-- <a-entity sphere-collider="objects: a-box" super-hands hand-controls="left"></a-entity>
+      <a-entity sphere-collider="objects: a-box" super-hands hand-controls="right"></a-entity> -->
+    </a-scene>
   </body>
 </html>

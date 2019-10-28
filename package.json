@@ -7,10 +7,25 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "parcel build index.html",
+    "build": "rm -R dist && parcel build index.html",
     "dev": "parcel index.html"
   },
   "dependencies": {
-    "parcel": "^1.12.4"
+    "aframe": "^0.9.2",
+    "aframe-environment-component": "^2.0.0",
+    "random-int": "^2.0.1",
+    "super-hands": "^3.0.0"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.2.1"
+  },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "assets",
+        "staticOutDir": "assets"
+      }
+    ]
   }
 }
