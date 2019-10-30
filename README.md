@@ -1,7 +1,8 @@
 # aframe-parcel-boilerplate
 
-Boilerplate for Web-VR with [A-Frame](https://aframe.io/) and [Parcel](https://parceljs.org).
-Added some common A-Frame modules and folder for static assets.
+Bare-bones boilerplate for Web-VR with [A-Frame](https://aframe.io/).
+
+Hit the ground running with [parcel](https://parceljs.org) for bundling, static assets folder and some common A-Frame modules.
 
 ## How to use
 
